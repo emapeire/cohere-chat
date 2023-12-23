@@ -9,7 +9,7 @@ const response = await cohere.generate({
   model: 'command',
   prompt:
     'Generate a list of 5 interview questions for a senior software engineer.',
-  maxTokens: 280,
+  maxTokens: 150,
   temperature: 1.2,
   k: 0,
   stopSequences: [],
