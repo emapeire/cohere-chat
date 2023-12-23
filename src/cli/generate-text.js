@@ -17,9 +17,9 @@ const interval = setInterval(() => {
 
 const response = await cohere.generate({
   model: 'command',
-  prompt:
-    'Generate a list of 5 interview questions for a senior software engineer.',
-  maxTokens: 150,
+  prompt: `Generate a list of 5 interview questions for a senior software engineer.\n
+    The generated response cannot exceed 500 characters`,
+  maxTokens: 500,
   temperature: 1.2,
   k: 0,
   stopSequences: [],
