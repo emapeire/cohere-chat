@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Cohere Chat is a chatbot platform that allows you to build and deploy chatbots for your website, mobile app, or other conversational experience.",
   "main": "src/services/index.js",
+  "type": "module",
   "scripts": {
     "start": "node --watch src/services/index.js"
   },
