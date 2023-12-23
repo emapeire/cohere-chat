@@ -7,15 +7,13 @@ const cohere = new CohereClient({
 
 const response = await cohere.generate({
   model: 'command',
-  prompt: `This program will generate a list of interview questions for a software engineer.\n--\n
-    Do not generate anything more than the 5 questions.\n--\n
-    The total must not exceed 500 characters.\n--\n
-    Generate a list of 5 interview questions for a senior software engineer.`,
-  maxTokens: 500,
+  prompt:
+    'Generate a list of 5 interview questions for a senior software engineer.',
+  maxTokens: 280,
   temperature: 1.2,
   k: 0,
-  stopSequences: ['--'],
+  stopSequences: [],
   returnLikelihoods: 'NONE'
 })
 
-console.log(`Prediction: ${response.generations[0].text}`)
+console.log(response.generations[0].text)
