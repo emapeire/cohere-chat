@@ -2,8 +2,10 @@
   "name": "cohere-chat",
   "version": "1.0.0",
   "description": "Cohere Chat is a chatbot platform that allows you to build and deploy chatbots for your website, mobile app, or other conversational experience.",
-  "main": "index.js",
-  "scripts": {},
+  "main": "src/services/index.js",
+  "scripts": {
+    "start": "node --watch src/services/index.js"
+  },
   "keywords": [
     "cohere",
     "chat",
@@ -17,6 +19,14 @@
   "author": "Emanuel Peire",
   "license": "MIT",
   "dependencies": {
+    "cohere-ai": "^7.6.2",
     "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.5.0",
+    "eslint-plugin-promise": "^6.1.1"
   }
 }
