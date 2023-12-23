@@ -1,0 +1,22 @@
+{
+  "name": "cohere-chat",
+  "version": "1.0.0",
+  "description": "Cohere Chat is a chatbot platform that allows you to build and deploy chatbots for your website, mobile app, or other conversational experience.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "cohere",
+    "chat",
+    "messenger",
+    "chatbot",
+    "bot",
+    "ai",
+    "artificial intelligence",
+    "conversational experience"
+  ],
+  "author": "Emanuel Peire",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
