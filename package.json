@@ -5,7 +5,7 @@
   "main": "src/services/index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch src/services/index.js"
+    "start": "node --watch src/cli/generate-text.js"
   },
   "keywords": [
     "cohere",
